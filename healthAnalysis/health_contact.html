@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bize Ulaşın</title>
+  <link rel="stylesheet" href="./health_analysis.css">
+  <style>
+    body{
+        text-align: center;
+    }
+    /* Gösterim amaçlı bazı temel stil ayarları */
+    #contactForm {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    #contactForm input,
+    #contactForm textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 8px;
+    }
+    #contactForm button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #contactForm button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <nav><h1>Sağlık Analizi Nüfusu</h1>
+    <ul>
+      <li><a href="./index.html" id="home">Ana Sayfa </a></li>
+      <li><a href="./health_contact.html" id="contact">Bize Ulaşın </a></li>
+      </li>
+
+    </ul>
+    </nav>
+  <h1>Bize Ulaşın</h1>
+  <p>Koşullarınız hakkında daha fazla bilgi almak ve tedavi yöntemleri için bizimle iletişime geçmekten çekinmeyin.</p>
+
+  <form id="contactForm">
+    <div>
+      <label for="name">İsim</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">E-posta</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="condition">Durum</label>
+      <input type="text" id="condition" name="condition" required>
+    </div>
+    <div>
+      <label for="message">Mesaj</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" onclick="thankyou()">Gönder</button>
+  </form>
+  <script>
+    function thankyou(){
+        alert('Bizimle iletişime geçtiğiniz için teşekkür ederiz!')
+    }
+  </script>
+</body>
+</html>
